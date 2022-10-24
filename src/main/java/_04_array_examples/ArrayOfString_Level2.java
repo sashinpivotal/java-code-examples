@@ -33,11 +33,17 @@ public class ArrayOfString_Level2 {
         for (int i = 0; i < currentIndex; i++) {
             System.out.print(uniqueWords[i] + " ");
         }
+        System.out.println();
 
         // TODO: Exercise #3
         // - Create an array of "char" from a String "Life is good"
         // - Display the array
-
+        String testString2 = "Life is good";
+        char[] chars = new char[testString2.length()];
+        for (int i = 0; i < testString2.length(); i++) {
+            chars[i] = testString2.charAt(i);
+        }
+        System.out.println(Arrays.toString(chars));
 
 
     }
