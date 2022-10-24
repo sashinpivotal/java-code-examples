@@ -19,7 +19,7 @@ public class Autoboxing_Level1 {
         int myInt = new Integer(4);
 
         // example of unboxing
-        int[] anotherIntArray = new int[10];
+        int[] anotherIntArray = new int[10]; // example of creating an array with fixed size
         int[] myIntArray = new int[myIntegerArray.length];
         for (int i = 0; i < myIntegerArray.length; i++) {
             myIntArray[i] = myIntegerArray[i]; // example of unboxing
