@@ -12,7 +12,7 @@ public class ArrayOfString_Level2 {
         //   using "[, ?.@]+" as regular expression
         // - Display the array
         String testString = "I love Boston.  Yes, you do love boston.";
-        String[] strings = testString.split("[, ?.@&$]+");
+        String[] stringArray = testString.split("[, ?.@&$]+");
 
         // TODO: Exercise #2
         // - Create a new array of String with unique word (but
@@ -23,13 +23,20 @@ public class ArrayOfString_Level2 {
         //   "i", "love", "boston", "yes", "do" as it's
         //   element values
         // - Display the array
-        String[] uniqueWords = new String[strings.length];
+
+        String[] uniqueWords = new String[stringArray.length];
         int currentIndex = 0;
-        for (int i = 0; i < strings.length; i++) {
-            if (!isWordAlreadyEncountered(uniqueWords, strings[i], currentIndex)) {
-                uniqueWords[currentIndex++] = strings[i];
+
+        for (int i = 0; i < stringArray.length; i++) {
+            boolean theWordAlreadyEncountered
+                    = isTheWordAlreadyEncountered(uniqueWords,
+                    stringArray[i],
+                    currentIndex);
+            if (!theWordAlreadyEncountered) {
+                uniqueWords[currentIndex++] = stringArray[i];
             }
         }
+
         for (int i = 0; i < currentIndex; i++) {
             System.out.print(uniqueWords[i] + " ");
         }
@@ -37,26 +44,28 @@ public class ArrayOfString_Level2 {
 
         // TODO: Exercise #3
         // - Create an array of "char" from a String "Life is good"
-        // - See if String class has a method that returns char on index
+        // - See if String class has a method that returns char on index location
         // - Display the array
         String testString2 = "Life is good";
-        char[] chars = new char[testString2.length()];
+        char[] charArray = new char[testString2.length()];
         for (int i = 0; i < testString2.length(); i++) {
-            chars[i] = testString2.charAt(i);
+            charArray[i] = testString2.charAt(i);
         }
-        System.out.println(Arrays.toString(chars));
-
-
+        Arrays.toString(charArray);
     }
 
-    private static boolean isWordAlreadyEncountered(String[] uniqueWords, String string, int currentIndex) {
+    private static boolean isTheWordAlreadyEncountered(
+            String[] uniqueWords,
+            String wordToFind,
+            int currentIndex) {
+
         boolean found = false;
         for (int i = 0; i < currentIndex; i++) {
-            if (uniqueWords[i].equalsIgnoreCase(string)) {
+            if (uniqueWords[i].equalsIgnoreCase(wordToFind)) {
                 found = true;
-                break;
             }
         }
         return found;
     }
+
 }
