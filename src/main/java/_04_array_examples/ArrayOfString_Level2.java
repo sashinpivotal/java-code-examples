@@ -37,6 +37,7 @@ public class ArrayOfString_Level2 {
 
         // TODO: Exercise #3
         // - Create an array of "char" from a String "Life is good"
+        // - See if String class has a method that returns char on index
         // - Display the array
         String testString2 = "Life is good";
         char[] chars = new char[testString2.length()];
