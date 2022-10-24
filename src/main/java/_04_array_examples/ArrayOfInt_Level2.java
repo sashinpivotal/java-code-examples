@@ -1,4 +1,4 @@
-package array_examples;
+package _04_array_examples;
 
 public interface ArrayOfInt_Level2 {
     public static void main(String[] args) {

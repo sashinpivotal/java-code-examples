@@ -1,4 +1,4 @@
-package array_examples;
+package _04_array_examples;
 
 public class ArrayOfString_Level1 {
 

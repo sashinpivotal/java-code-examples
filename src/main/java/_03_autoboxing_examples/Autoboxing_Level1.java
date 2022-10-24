@@ -1,4 +1,4 @@
-package autoboxing_examples;
+package _03_autoboxing_examples;
 
 public class Autoboxing_Level1 {
 

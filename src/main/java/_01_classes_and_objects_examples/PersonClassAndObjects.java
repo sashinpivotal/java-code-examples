@@ -1,4 +1,4 @@
-package classes_and_objects_examples;
+package _01_classes_and_objects_examples;
 
 public class PersonClassAndObjects {
 
