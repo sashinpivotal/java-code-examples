@@ -1,5 +1,7 @@
 package _04_array_examples;
 
+import java.util.Arrays;
+
 public class ArrayOfString_Level1 {
 
     public static void main(String[] args) {
@@ -8,6 +10,11 @@ public class ArrayOfString_Level1 {
         // - Create a new array of String with a size of 10
         // - Assign names of your family members to the array
         // - Display the array using Arrays.toString(..) method
+        String[] familyMembers = new String[10];
+        familyMembers[0] = "Dan";
+        familyMembers[1] = "Mary";
+        familyMembers[2] = "Tom";
+        System.out.println(Arrays.toString(familyMembers));
 
         // TODO: Exercise #2
         // - Create any array of String with the
@@ -15,7 +22,26 @@ public class ArrayOfString_Level1 {
         //   - "2", "40", "7", "5"
         // - Create a new array of int from the array
         //   of String created above
+        // - Remember "Integer" class has a method to convert
+        //   a String to "int" value
         // - Display both arrays using Arrays.toString(..) method
+        String[] myStringNumbers = {"2", "40", "7", "5"};
+        int[] myIntNumbers = new int[myStringNumbers.length];
+        for (int i = 0; i < myStringNumbers.length; i++) {
+            myIntNumbers[i] = Integer.parseInt(myStringNumbers[i]);
+        }
+        System.out.println(Arrays.toString(myStringNumbers));
+        System.out.println(Arrays.toString(myIntNumbers));
+        System.out.println(myStringNumbers.getClass().getName());
+        System.out.println(myIntNumbers.getClass().getName());
+
+        // Print out element types of arrays
+        Integer[] integers = new Integer[4];
+        System.out.println(integers.getClass().getComponentType());
+        double[] doubles = new double[3];
+        System.out.println(doubles.getClass().getComponentType());
+        long[] longs = new long[4];
+        System.out.println(longs.getClass().getComponentType());
 
         // TODO: Exercise #3
         // - Create an array of String called "myStringArrayA"
@@ -28,6 +54,19 @@ public class ArrayOfString_Level1 {
         //   and "myStringArrayB" and display the result
         // - Check the equality of the two arrays of "myStringArrayA"
         //   and "myStringArrayC" and display the result
+        String[] myStringArrayA = {"Hello", "Boston"};
+        String[] myStringArrayB = {"Hello", "Boston"};
+        String[] myStringArrayC = {"Boston", "Hello"};
+
+        boolean equals1 = myStringArrayA.equals(myStringArrayB);
+        boolean equals2 = myStringArrayA == myStringArrayB;
+        System.out.println(equals1);
+
+        boolean equals3 = Arrays.equals(myStringArrayA, myStringArrayB);
+        System.out.println(equals3);
+
+        boolean equals4 = Arrays.equals(myStringArrayA, myStringArrayC);
+        System.out.println(equals4);
 
     }
 }

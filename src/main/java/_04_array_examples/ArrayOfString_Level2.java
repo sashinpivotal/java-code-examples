@@ -9,6 +9,8 @@ public class ArrayOfString_Level2 {
         //   from "I love Boston.  Yes, you do love boston."
         //   using "[, ?.@]+" as regular expression
         // - Display the array
+        String initialString = "I love Boston.  Yes, you do love boston.";
+        String[] strings = initialString.split("[, ?.@&$]+");
 
         // TODO: Exercise #2
         // - Create a new array of String with unique word (but
