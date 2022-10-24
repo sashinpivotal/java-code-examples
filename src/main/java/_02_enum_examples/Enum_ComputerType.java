@@ -3,10 +3,10 @@ package _02_enum_examples;
 public class Enum_ComputerType {
 
     // Alternative to Enum
-    public static final int PC = 1;
-    public static final int TABLET = 2;
-    public static final int PHONE = 3;
-    public static final int TV = 4;
+    public static final String PC = "PC";
+    public static final String TABLET = "TABLET";
+    public static final String PHONE = "PHONE";
+    public static final String TV = "TV";
 
     public static void main(String[] args) {
 
@@ -21,12 +21,12 @@ public class Enum_ComputerType {
         // - Create a static method called
         //   "buyComputer(..)", which takes "ComputerType"
         //   enum type and quantity
-        buyComputerMethodUsingPublicStaticFinalConstants(2, 4);
+        buyComputerMethodUsingPublicStaticFinalConstants(PC, 4);
         buyComputerMethodUsingEnum(ComputerType.TABLET, 3);
     }
 
     // use public static final
-    public static void buyComputerMethodUsingPublicStaticFinalConstants(int computerType, int quantity) {
+    public static void buyComputerMethodUsingPublicStaticFinalConstants(String computerType, int quantity) {
         System.out.println(computerType);
     }
 
