@@ -38,4 +38,9 @@ public class HourlyEmployee extends Employee{
                 ", hourlyRate=" + hourlyRate +
                 '}';
     }
+
+    @Override
+    public String someMethod(String xx, int yy) {
+        return null;
+    }
 }

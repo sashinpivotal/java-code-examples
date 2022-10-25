@@ -19,4 +19,8 @@ public class Employee {
                 ", hireDate=" + hireDate +
                 '}';
     }
+
+    public Object someMethod(String x, int y) {
+        return null;
+    }
 }
