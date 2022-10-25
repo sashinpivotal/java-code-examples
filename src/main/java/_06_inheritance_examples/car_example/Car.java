@@ -17,6 +17,11 @@ public class Car extends Vehicle{
                 ", model='" + model + '\'' +
                 '}';
     }
+
+    @Override
+    public void moveTo(String destination) {
+        System.out.println("moveTo by Car");
+    }
 }
 
 
