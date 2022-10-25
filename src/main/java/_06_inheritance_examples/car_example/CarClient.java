@@ -9,8 +9,10 @@ class CarClient {
 
         Vehicle xyz234 = new Car("XYZ234");
 
+        Vehicle boat = new Boat("BNW234");
+
         DMV dmv = new DMV();
-        dmv.register(car);
+        dmv.register(boat);
 
     }
 }
