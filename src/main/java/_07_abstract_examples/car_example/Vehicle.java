@@ -1,4 +1,4 @@
-package _06_inheritance_examples.car_example;
+package _07_abstract_examples.car_example;
 
 public abstract class Vehicle {
 

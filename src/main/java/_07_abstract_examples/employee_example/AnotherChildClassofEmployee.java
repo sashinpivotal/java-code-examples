@@ -1,4 +1,4 @@
-package _06_inheritance_examples.employee_example;
+package _07_abstract_examples.employee_example;
 
 import java.time.LocalDate;
 
@@ -10,6 +10,11 @@ public class AnotherChildClassofEmployee extends Employee{
 
     @Override
     public void pay() {
+
+    }
+
+    @Override
+    public void someMethod() {
 
     }
 }
