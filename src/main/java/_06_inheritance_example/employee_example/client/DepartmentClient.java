@@ -12,8 +12,11 @@ public class DepartmentClient {
     public static void main(String[] args) {
 
         Employee[] employees = new Employee[100];
-        Department marketing = new Department(
+        Department marketingDepartment = new Department(
                 "marketing", employees);
+
+        Employee sang = new Employee("sang", LocalDate.of(2020, 03, 04));
+        Employee nancy = new Employee("nancy", LocalDate.of(2010, 02, 04));
 
         Employee david = new SalariedEmployee("david",
                 LocalDate.of(1999, 12, 04),
@@ -23,11 +26,13 @@ public class DepartmentClient {
                 200,
                 10.0);
 
-        marketing.addEmployee(david);
-        marketing.addEmployee(bryce);
+        marketingDepartment.addEmployee(sang);
+        marketingDepartment.addEmployee(nancy);
+        marketingDepartment.addEmployee(david);
+        marketingDepartment.addEmployee(bryce);
 
-        marketing.listAllEmployees();
-        marketing.payEmployees();
+        marketingDepartment.listAllEmployees();
+        marketingDepartment.payEmployees();
 
     }
 }
