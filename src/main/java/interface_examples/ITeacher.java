@@ -103,10 +103,6 @@ class TrainingCompany {
         IHighSchoolTeacher iHighSchoolTeacher = new RetiredProfessional();
         IGolfer iGolfer = new RetiredProfessional();
         iGolfer.myDefaultMethod();
-
-        ITeacher iTeacher = new RetiredProfessional();
-
-
     }
 
     // Is this method going to provide polymorphic behavior?
