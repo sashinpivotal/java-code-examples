@@ -1,4 +1,4 @@
-package misc;
+package _07_abstract_examples.misc;
 
 public abstract class MyAbstractClass {
 

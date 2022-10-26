@@ -1,4 +1,4 @@
-package _09_interface_examples.misc2;
+package _09_interface_examples.animal;
 
 public class Main {
 
