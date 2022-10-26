@@ -1,6 +1,6 @@
 package _06_inheritance_examples.car_example;
 
-public class Vehicle {
+public abstract class Vehicle {
 
     private String vin;
 
@@ -12,9 +12,7 @@ public class Vehicle {
         return vin;
     }
 
-    public void moveTo(String location) {
-        System.out.println("moveTo by Vehicle");
-    }
+    public abstract void moveTo(String location);
 }
 
 

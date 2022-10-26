@@ -9,8 +9,6 @@ import java.time.LocalDate;
 public class EmployeeClient {
 
     public static void main(String[] args) {
-        Employee sang = new Employee("sang", LocalDate.of(2020, 01, 23));
-        System.out.println(sang);
 
         Employee david = new SalariedEmployee("david",
                 LocalDate.of(1999, 12, 04),
@@ -19,6 +17,8 @@ public class EmployeeClient {
                 LocalDate.of(1998, 3, 3),
                 200,
                 10.0);
+
+
 
 
     }

@@ -6,4 +6,9 @@ public class Boat extends Vehicle {
         super(vin);
     }
 
+    @Override
+    public void moveTo(String destination) {
+        System.out.println("moved by Boat");
+    }
+
 }

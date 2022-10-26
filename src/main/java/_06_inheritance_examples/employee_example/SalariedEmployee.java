@@ -27,4 +27,15 @@ public class SalariedEmployee extends Employee{
                 "monthlySalary=" + monthlySalary +
                 '}';
     }
+
+    @Override
+    public void pay() {
+        System.out.println("pay from Salaried employee "
+                + monthlySalary);
+    }
+
+    @Override
+    public void someMethod() {
+
+    }
 }

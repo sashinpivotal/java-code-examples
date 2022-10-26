@@ -3,7 +3,7 @@ package _06_inheritance_examples.employee_example;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Employee {
+public abstract class Employee {
 
     private String name;
     private LocalDate hireDate;
@@ -13,16 +13,20 @@ public class Employee {
         this.hireDate = hireDate;
     }
 
+    public abstract void pay();
+
+    public abstract void someMethod();
+
+    public Object someMethod(String x, int y) {
+        return null;
+    }
+
     @Override
     public String toString() {
         return "Employee{" +
                 "name='" + name + '\'' +
                 ", hireDate=" + hireDate +
                 '}';
-    }
-
-    public Object someMethod(String x, int y) {
-        return null;
     }
 
     @Override
@@ -37,4 +41,6 @@ public class Employee {
     public int hashCode() {
         return Objects.hash(name, hireDate);
     }
+
+
 }

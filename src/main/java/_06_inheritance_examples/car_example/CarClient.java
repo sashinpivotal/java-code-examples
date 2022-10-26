@@ -12,14 +12,6 @@ class CarClient {
 //        dmv.register(boat);
 
         Vehicle vehicle = new Car("XYZ234");
-        Vehicle vehicle2 = new Vehicle("adf");
-        String classNameOfVehicle = vehicle.getClass().getName();
-        String classNameOfVehicle2 = vehicle2.getClass().getName();
-        System.out.println("class of the object vehicle is pointing at = " + classNameOfVehicle);
-        System.out.println("class of the object vehicle is pointing at = " + classNameOfVehicle2);
-        if (classNameOfVehicle.contains("Vehicle")) {
-           vehicle.moveTo("boston");
-        }
         vehicle.moveTo("whatever");
 
     }

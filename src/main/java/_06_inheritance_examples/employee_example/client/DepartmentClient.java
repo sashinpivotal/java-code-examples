@@ -15,9 +15,6 @@ public class DepartmentClient {
         Department marketing = new Department(
                 "marketing", employees);
 
-        Employee sang = new Employee("sang", LocalDate.of(2020, 01, 23));
-        System.out.println(sang);
-
         Employee david = new SalariedEmployee("david",
                 LocalDate.of(1999, 12, 04),
                 1000.0);
@@ -26,11 +23,11 @@ public class DepartmentClient {
                 200,
                 10.0);
 
-        marketing.addEmployee(sang);
         marketing.addEmployee(david);
         marketing.addEmployee(bryce);
 
         marketing.listAllEmployees();
+        marketing.payEmployees();
 
     }
 }

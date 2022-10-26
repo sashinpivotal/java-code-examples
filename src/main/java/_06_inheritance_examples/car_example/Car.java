@@ -22,6 +22,10 @@ public class Car extends Vehicle{
     public void moveTo(String destination) {
         System.out.println("moveTo by Car");
     }
+
+    public void onlyInCarClassMethod() {
+
+    }
 }
 
 

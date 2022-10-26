@@ -7,4 +7,9 @@ public class AnotherChildClassofEmployee extends Employee{
                                        LocalDate hireDate) {
         super(name, hireDate);
     }
+
+    @Override
+    public void pay() {
+
+    }
 }

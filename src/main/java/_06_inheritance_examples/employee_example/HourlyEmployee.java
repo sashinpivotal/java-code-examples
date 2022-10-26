@@ -2,7 +2,7 @@ package _06_inheritance_examples.employee_example;
 
 import java.time.LocalDate;
 
-public class HourlyEmployee extends Employee{
+public abstract class HourlyEmployee extends Employee{
 
     private int numberOfHoursWorkedPerMonth;
     private double hourlyRate;
@@ -43,4 +43,11 @@ public class HourlyEmployee extends Employee{
     public String someMethod(String xx, int yy) {
         return null;
     }
+
+    @Override
+    public void pay() {
+        System.out.println("pay from Hourly employee "
+                + numberOfHoursWorkedPerMonth * hourlyRate);
+    }
+
 }
