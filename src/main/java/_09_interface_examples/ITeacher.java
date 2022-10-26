@@ -1,6 +1,4 @@
-package interface_examples;
-
-import _01_classes_and_objects_examples.Person;
+package _09_interface_examples;
 
 public interface ITeacher {
 
