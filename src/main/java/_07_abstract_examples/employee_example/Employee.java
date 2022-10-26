@@ -14,7 +14,6 @@ public abstract class Employee {
     }
 
     public abstract void pay();
-
     public abstract void someMethod();
 
     public Object someMethod(String x, int y) {

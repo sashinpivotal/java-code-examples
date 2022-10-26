@@ -8,7 +8,6 @@ public class HourlyEmployee extends Employee{
     private double hourlyRate;
 
     public HourlyEmployee(String name, LocalDate hireDate) {
-
         super(name, hireDate);
     }
 
