@@ -1,9 +1,9 @@
-package _07_abstract_examples.employee_example.client;
+package _06_inheritance_example.employee_example.client;
 
-import _07_abstract_examples.employee_example.Department;
-import _07_abstract_examples.employee_example.Employee;
-import _07_abstract_examples.employee_example.HourlyEmployee;
-import _07_abstract_examples.employee_example.SalariedEmployee;
+import _06_inheritance_example.employee_example.Department;
+import _06_inheritance_example.employee_example.Employee;
+import _06_inheritance_example.employee_example.HourlyEmployee;
+import _06_inheritance_example.employee_example.SalariedEmployee;
 
 import java.time.LocalDate;
 
@@ -28,5 +28,6 @@ public class DepartmentClient {
 
         marketing.listAllEmployees();
         marketing.payEmployees();
+
     }
 }
