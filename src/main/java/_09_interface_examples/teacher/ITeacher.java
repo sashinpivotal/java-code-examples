@@ -1,4 +1,4 @@
-package _09_interface_examples;
+package _09_interface_examples.teacher;
 
 public interface ITeacher {
 
