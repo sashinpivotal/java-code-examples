@@ -10,6 +10,10 @@ public interface FatherInterface {
     default void dMethod2() {
         System.out.println("dMethod2 from interface");
     }
+
+    static void myStaticMethod() {
+        System.out.println("static method inside interface");
+    }
 }
 
 class Main {
@@ -19,6 +23,7 @@ class Main {
                 = new MyImplementationOfChildInterface();
         anInterface.dMethod1();
         anInterface.dMethod2();
+        FatherInterface.myStaticMethod();
     }
 
 }
