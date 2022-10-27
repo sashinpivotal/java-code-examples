@@ -2,12 +2,12 @@ package _09_interface_examples.animal;
 
 public class Main {
 
-    static Breathable[] breathables = new Breathable[10];
+    static IBreathable[] breathables = new IBreathable[10];
     static int currentIndex = 0;
 
     public static void main(String[] args) {
-        Breathable animal = new Animal();
-        Breathable human = new Human();
+        IBreathable animal = new Animal();
+        IBreathable human = new Human();
 
         breathables[currentIndex++] = animal;
         breathables[currentIndex++] = human;

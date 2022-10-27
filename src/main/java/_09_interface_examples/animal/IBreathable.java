@@ -1,6 +1,6 @@
 package _09_interface_examples.animal;
 
-public interface Breathable {
+public interface IBreathable {
 
     void breathe();
 }
