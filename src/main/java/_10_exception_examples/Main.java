@@ -20,9 +20,18 @@ class Employee {
         this.name = name;
     }
 
-    public void goToWork() throws SQLException, MyOwnCheckedException {
+    public void goToWork() throws MyOwnCheckedException {
         Car c = new Car("ABC123");
-        c.moveTo("Mars");
+        try {
+            c.moveTo("Moon");
+        } catch (IllegalArgumentException illegalArgumentException) {
+            System.out.println(illegalArgumentException.getMessage());
+            throw new TrafficIsHeavyException("my business level exception message");
+        } catch (SQLException sqlException) {
+            System.out.println(sqlException.getMessage());
+        } catch (Exception e) {
+            System.out.println("general exception catch");
+        }
         System.out.println("Arrived at work");
     }
 }
@@ -35,7 +44,7 @@ class Car {
         this.vin = vin;
     }
 
-    public void moveTo(String location) throws SQLException, MyOwnCheckedException{
+    public void moveTo(String location) throws SQLException, MyOwnCheckedException {
         if (location.equals("Mars")) {
             throw new IllegalArgumentException(
                     "Can't get to " + location
