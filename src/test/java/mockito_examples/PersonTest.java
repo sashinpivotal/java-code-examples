@@ -13,7 +13,8 @@ public class PersonTest {
     @Mock
     private Address address;
 
-    // This test will fail due to a logic error in the Address dependency
+    // This test will fail due to a logic error
+    // in the Address dependency
     @Test
     public void getPersonInfo_should_return_upperCased_info_not_using_mock() {
 
@@ -27,7 +28,8 @@ public class PersonTest {
 
     }
 
-    // This test will succeed given that we mock the behavior of Address dependency
+    // This unit test will succeed given that we
+    // mock the behavior of Address dependency
     @Test
     public void getPersonInfo_should_return_upperCased_info_using_mock() {
 
