@@ -19,7 +19,7 @@ public class PersonTest {
 
         // arrange
         Address boston = new Address("boston", "usa");
-        Person sang1 = new Person("sang", address);
+        Person sang1 = new Person("sang", boston);
         String upperCasedPersonInfo = sang1.getUpperCasedPersonInfo();
 
         // assert
