@@ -18,9 +18,8 @@ public class PersonTest {
     public void getPersonInfo_should_return_upperCased_info_not_using_mock() {
 
         // arrange
-        Person sang1 = new Person("sang");
         Address boston = new Address("boston", "usa");
-        sang1.setAddress(boston);
+        Person sang1 = new Person("sang", address);
         String upperCasedPersonInfo = sang1.getUpperCasedPersonInfo();
 
         // assert
@@ -36,9 +35,8 @@ public class PersonTest {
         BDDMockito.given(address.getInfo()).willReturn("boston USA");
 
         // act
-        Person sang1 = new Person("sang");
-        sang1.setAddress(address);
-        String upperCasedPersonInfo = sang1.getUpperCasedPersonInfo();
+        Person person = new Person("sang", address);
+        String upperCasedPersonInfo = person.getUpperCasedPersonInfo();
 
         // assert
         Assert.assertEquals("SANG LIVES IN BOSTON USA", upperCasedPersonInfo);
