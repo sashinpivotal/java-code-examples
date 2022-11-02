@@ -15,6 +15,8 @@ public class PersonTest {
 
     // This test will fail due to a logic error
     // in the Address dependency
+    // (In that respect, it is an integration testing
+    // involving two classes not a unit test.)
     @Test
     public void getPersonInfo_should_return_upperCased_info_not_using_mock() {
 
