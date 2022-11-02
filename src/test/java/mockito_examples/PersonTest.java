@@ -17,6 +17,8 @@ public class PersonTest {
     // in the Address dependency
     // (In that respect, it is an integration testing
     // involving two classes not a unit test.)
+    // (Whether you want to use integration testing or
+    // unit testing or both is up to you.)
     @Test
     public void getPersonInfo_should_return_upperCased_info_not_using_mock() {
 
