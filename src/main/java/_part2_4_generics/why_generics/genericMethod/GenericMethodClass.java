@@ -9,7 +9,7 @@ public class GenericMethodClass {
         return null;
     }
 
-    // T is a type parameter
+    // T is a type parameter of generics
     static <T> List<T> nCopies2(int n, T item) {
         return null;
     }
