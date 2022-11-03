@@ -15,6 +15,5 @@ public class Main {
                 = new MyClassWithGenerics<>();
         MyClassWithGenerics<Customer> customerMyClassWithGenerics
                 = new MyClassWithGenerics<>();
-
     }
 }
