@@ -1,4 +1,4 @@
-package mockito_examples;
+package _part2_3_mockito_examples;
 
 import org.junit.Assert;
 import org.junit.Test;
