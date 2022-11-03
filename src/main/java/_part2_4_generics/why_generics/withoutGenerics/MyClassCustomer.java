@@ -1,6 +1,7 @@
-package _part2_4_generics.why_generics;
+package _part2_4_generics.why_generics.withoutGenerics;
 
-public class MyClassCustomer {
+
+public class MyClassCustomer<Customer> {
 
     private Customer customer;
 
@@ -8,9 +9,5 @@ public class MyClassCustomer {
         System.out.println(customer);
     }
 
-
 }
 
-class Customer {
-
-}

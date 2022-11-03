@@ -1,5 +1,9 @@
 package _part2_4_generics.why_generics;
 
+import _part2_4_generics.why_generics.withGenerics.MyClassWithGenerics;
+import _part2_4_generics.why_generics.withoutGenerics.MyClassCustomer;
+import _part2_4_generics.why_generics.withoutGenerics.MyClassWithInteger;
+
 public class Main {
 
     public static void main(String[] args) {

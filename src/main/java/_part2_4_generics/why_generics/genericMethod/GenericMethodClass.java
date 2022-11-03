@@ -1,0 +1,20 @@
+package _part2_4_generics.why_generics.genericMethod;
+
+import java.util.List;
+
+public class GenericMethodClass {
+
+    // T is a regular type
+    static List<T> nCopies1(int n, T item) {
+        return null;
+    }
+
+    // T is a type parameter
+    static <T> List<T> nCopies2(int n, T item) {
+        return null;
+    }
+
+}
+
+class T {
+}
