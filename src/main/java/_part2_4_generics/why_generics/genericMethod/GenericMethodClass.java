@@ -4,7 +4,7 @@ import java.util.List;
 
 public class GenericMethodClass {
 
-    // T is a regular type
+    // T is a regular type - see class T below
     static List<T> nCopies1(int n, T item) {
         return null;
     }
