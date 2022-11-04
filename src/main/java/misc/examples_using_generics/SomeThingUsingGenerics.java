@@ -9,6 +9,10 @@ public class SomeThingUsingGenerics<E> {
     }
 }
 
+
+// I am Sang's collaborating developer
+// line number 1
+// line number 2
 class Main9 {
     public static void main(String[] args) {
         SomeThingUsingGenerics<Integer> integerSomeThingUsingGenerics
