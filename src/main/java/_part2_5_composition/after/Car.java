@@ -1,11 +1,11 @@
-package _part2_5_composition.before;
+package _part2_5_composition.after;
 
 public class Car {
 
-    private Engine engine;
+    private IEngine engine;
     private Transmission transmission;
 
-    public Car(Engine engine, Transmission transmission) {
+    public Car(IEngine engine, Transmission transmission) {
         this.engine = engine;
         this.transmission = transmission;
     }

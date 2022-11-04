@@ -5,7 +5,7 @@ public class PersonSingleton {
     private static final PersonSingleton person;
 
     static {
-        System.out.println("static code block");
+        System.out.println("static code block is executed");
         person = new PersonSingleton();
     }
 
@@ -18,7 +18,7 @@ class Main {
     public static void main(String[] args) {
         PersonSingleton person1 = PersonSingleton.createPerson();
         PersonSingleton person2 = PersonSingleton.createPerson();
-        boolean b = person1 == person2;
+        boolean b = (person1 == person2);
         System.out.println(b);
     }
 }
