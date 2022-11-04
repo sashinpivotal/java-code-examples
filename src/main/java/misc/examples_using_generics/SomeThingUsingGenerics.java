@@ -21,5 +21,6 @@ class Main9 {
                 = new SomeThingUsingGenerics<>();
     }
 }
+// Sang change #2
 
 
