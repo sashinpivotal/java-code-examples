@@ -9,8 +9,8 @@ public class Main {
         System.out.println("Enter something and then press Return key!");
         Scanner in = new Scanner(System.in);
 
-        String s = in.nextLine();
-        System.out.println("You entered string " + s);
+        String line = in.nextLine();
+        System.out.println("You entered a line  " + line);
 
         int a = in.nextInt();
         System.out.println("You entered integer " + a);
