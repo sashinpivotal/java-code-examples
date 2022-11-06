@@ -1,4 +1,4 @@
-package _part2_8_lambda.streams_refactored_example2;
+package _part2_9_streams.streams_refactored_example2;
 
 public class Transaction {
 	

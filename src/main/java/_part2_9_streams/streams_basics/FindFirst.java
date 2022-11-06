@@ -1,4 +1,4 @@
-package _part2_8_lambda.streams_basics;
+package _part2_9_streams.streams_basics;
 
 import java.util.Optional;
 import java.util.stream.Stream;
