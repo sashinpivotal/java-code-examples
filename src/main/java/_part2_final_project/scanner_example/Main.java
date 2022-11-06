@@ -1,4 +1,4 @@
-package _scanner_class_example;
+package _part2_final_project.scanner_example;
 
 import java.util.Scanner;
 
