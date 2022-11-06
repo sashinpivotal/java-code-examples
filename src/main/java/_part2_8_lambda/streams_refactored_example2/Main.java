@@ -7,12 +7,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        List<Transaction> transactions = new ArrayList<>(Arrays.asList(
+        List<Transaction> transactions = Arrays.asList(
                 new Transaction(1, TransactionType.GROCERY, 100),
                 new Transaction(2, TransactionType.DESK, 300),
                 new Transaction(3, TransactionType.GROCERY, 250),
                 new Transaction(4, TransactionType.GROCERY, 150),
-                new Transaction(5, TransactionType.CHAIR, 80)));
+                new Transaction(5, TransactionType.CHAIR, 80));
 
         System.out.println("---- Non-stream (External iteration) operation ----");
         List<Integer> transactionIds = getGroceryTransactionIdsNotUsingStream(transactions);
@@ -23,11 +23,13 @@ public class Main {
         transactionIds.forEach(id -> System.out.println("transaction id = " + id));
 
         // TODO:
-        // - Create Product, which has Integer productId, ProductType productType,
-        //   and Integer price fields
-        // - Create ProductType as a enum, which has BOOK, ELECTRONICS, FOOD as possible values
+        // - Create Product, which has Integer productId,
+        //   ProductType productType, and Integer price fields
+        // - Create ProductType as a enum, which has BOOK,
+        //   ELECTRONICS, FOOD as possible values
         // - Add appropriate initial test data
-        // - Using stream, get a list of Product Id's of the ELECTRONICS reverse sorted on the price
+        // - Using stream, get a list of Product Id's of the
+        //   ELECTRONICS reverse sorted on the price
 
     }
 

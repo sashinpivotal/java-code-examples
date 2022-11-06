@@ -43,9 +43,9 @@ public class Main {
 		List<Integer> list = Arrays.asList(3, 8, 14, 11);
 
 		// Compute sum of numbers that are greater than 10
-		System.out.println(computeSumNotUsingStream(list));
-		System.out.println(computeSumUsingStream(list));
-		System.out.println(computeSumUsingStreamParallel(list));
+		System.out.println("computeSumNotUsingStream = " + computeSumNotUsingStream(list));
+		System.out.println("computeSumUsingStream = " + computeSumUsingStream(list));
+		System.out.println("computeSumUsingStreamParallel = " + computeSumUsingStreamParallel(list));
 
 		// TODO:
 		// - Create Stream-based method, in which you filter only  
