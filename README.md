@@ -24,4 +24,4 @@ And I love doing this
 2. Feb
 3. March
 
-![image](./images/image1.PNG)
+![image](./images/image1.png)
