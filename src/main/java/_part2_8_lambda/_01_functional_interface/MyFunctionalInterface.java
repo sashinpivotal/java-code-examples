@@ -1,4 +1,4 @@
-package _part2_8_lambda._01_anonymous_inner_class;
+package _part2_8_lambda._01_functional_interface;
 
 @FunctionalInterface
 public interface MyFunctionalInterface {
