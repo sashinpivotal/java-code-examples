@@ -42,6 +42,8 @@ public class Main {
                         && person.getAge() > 10);
         displayResult("---->#2c: ", peopleResult);
 
+        // #2: TODO - Write code to find people whose name contains "D"
+
         // #3: call methods which use predicate with generic type
         peopleResult = find(people,
                 person -> person.getName().equals("Jon"));
@@ -62,6 +64,8 @@ public class Main {
         fruitResult = find(fruits, fruit -> fruit.getName()
                 .startsWith("A") && fruit.getQuantity() > 10);
         displayResult("---->#3f: ", fruitResult);
+
+        // #3: TODO - Write code to find people whose name contains "D"
 
         // #4: Use a stream
         Stream<Person> resultPeople = people.stream()
