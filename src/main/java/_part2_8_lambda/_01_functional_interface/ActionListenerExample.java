@@ -16,23 +16,26 @@ public class ActionListenerExample {
         JButton testButton4 = new JButton("Click to call Lambda ActionListener4");
 
         // Anonymous ActionListener
-        testButton1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                System.out.println("Click Detected by Anonymous Listener: " + e);
-            }
-        });
+        testButton1.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        System.out.println("Click Detected by Anonymous Listener: " + e);
+                    }
+                });
 
         // Lambda ActionListener
-        testButton2.addActionListener(e -> System.out.println("Click Detected by Lambda Listner: " + e));
+        testButton2.addActionListener(
+                e -> System.out.println("Click Detected by Lambda Listener: " + e));
 
         // Anonymous ActionListener
-        testButton3.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                System.out.println(LocalTime.now());
-            }
-        });
+        testButton3.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        System.out.println(LocalTime.now());
+                    }
+                });
 
         // Lambda ActionListener
         testButton4.addActionListener(e -> System.out.println(LocalTime.now()));

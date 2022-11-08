@@ -9,14 +9,15 @@ public class ComparatorExample {
         List<Person> personList = Person.createShortList();
 
         // Sort with Anonymous Inner Class
-        Collections.sort(personList, new Comparator<Person>(){
-            public int compare(Person p1, Person p2){
-                return p1.getSurName().compareTo(p2.getSurName());
-            }
-        });
+        Collections.sort(personList,
+                new Comparator<Person>() {
+                    public int compare(Person p1, Person p2) {
+                        return p1.getSurName().compareTo(p2.getSurName());
+                    }
+                });
 
         System.out.println("=== Sorted Asc SurName ===");
-        for(Person p:personList){
+        for (Person p : personList) {
             p.printName();
         }
 
@@ -24,37 +25,39 @@ public class ComparatorExample {
 
         // Print in ascending order
         System.out.println("=== Sorted Asc SurName ===");
-        Collections.sort(personList, (Person p1, Person p2) -> p1.getSurName().compareTo(p2.getSurName()));
+        Collections.sort(personList,
+                (Person p1, Person p2) -> p1.getSurName().compareTo(p2.getSurName()));
 
-        for(Person p:personList){
+        for (Person p : personList) {
             p.printName();
         }
 
         // Print in descending order
         System.out.println("=== Sorted Desc SurName ===");
-        Collections.sort(personList, (p1,  p2) -> p2.getSurName().compareTo(p1.getSurName()));
+        Collections.sort(personList,
+                (p1, p2) -> p2.getSurName().compareTo(p1.getSurName()));
 
-        for(Person p:personList){
+        for (Person p : personList) {
             p.printName();
         }
 
-        // <For your own exercise>
-        // - Create an list of Integers
+        // - Create a list of Integers
         // - Sort them using anonymous inner class of Comparator
         // - Sort them using Lambda comparator
         List<Integer> integers = Arrays.asList(4, 45, 23, 66);
 
-        Collections.sort(integers, new Comparator<Integer>(){
-            @Override
-            public int compare(Integer i1, Integer i2) {
-                return i1.compareTo(i2);
-            }
+        Collections.sort(integers,
+                new Comparator<Integer>() {
+                    @Override
+                    public int compare(Integer i1, Integer i2) {
+                        return i1.compareTo(i2);
+                    }
 
-        });
+                });
         integers.forEach(n -> System.out.println(n));
 
         integers = Arrays.asList(4, 45, 23, 66);
-        Collections.sort(integers, (i1, i2)-> i1.compareTo(i2));
+        Collections.sort(integers, (i1, i2) -> i1.compareTo(i2));
         integers.forEach(n -> System.out.println(n));
 
     }
@@ -69,61 +72,61 @@ class Person {
     private String phone;
     private String address;
 
-    public static class Builder{
+    public static class Builder {
 
-        private String givenName="";
-        private String surName="";
+        private String givenName = "";
+        private String surName = "";
         private int age = 0;
         private Gender gender = Gender.FEMALE;
         private String eMail = "";
         private String phone = "";
         private String address = "";
 
-        public Person.Builder givenName(String givenName){
+        public Person.Builder givenName(String givenName) {
             this.givenName = givenName;
             return this;
         }
 
-        public Person.Builder surName(String surName){
+        public Person.Builder surName(String surName) {
             this.surName = surName;
             return this;
         }
 
-        public Person.Builder age (int val){
+        public Person.Builder age(int val) {
             age = val;
             return this;
         }
 
-        public Person.Builder gender(Gender val){
+        public Person.Builder gender(Gender val) {
             gender = val;
             return this;
         }
 
-        public Person.Builder email(String val){
+        public Person.Builder email(String val) {
             eMail = val;
             return this;
         }
 
-        public Person.Builder phoneNumber(String val){
+        public Person.Builder phoneNumber(String val) {
             phone = val;
             return this;
         }
 
-        public Person.Builder address(String val){
+        public Person.Builder address(String val) {
             address = val;
             return this;
         }
 
-        public Person build(){
+        public Person build() {
             return new Person(this);
         }
     }
 
-    private Person(){
+    private Person() {
         super();
     }
 
-    private Person(Person.Builder builder){
+    private Person(Person.Builder builder) {
         givenName = builder.givenName;
         surName = builder.surName;
         age = builder.age;
@@ -134,19 +137,19 @@ class Person {
 
     }
 
-    public String getGivenName(){
+    public String getGivenName() {
         return givenName;
     }
 
-    public String getSurName(){
+    public String getSurName() {
         return surName;
     }
 
-    public int getAge(){
+    public int getAge() {
         return age;
     }
 
-    public void print(){
+    public void print() {
         System.out.println(
                 "\nName: " + givenName + " " + surName + "\n" +
                         "Age: " + age + "\n" +
@@ -157,18 +160,18 @@ class Person {
         );
     }
 
-    public void printName(){
+    public void printName() {
         System.out.println(
                 "Name: " + givenName + " " + surName);
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Name: " + givenName + " " + surName + "\n" + "Age: " + age + "  Gender: " + gender + "\n" + "eMail: " + eMail + "\n" + "Address: " + address + "\n";
     }
 
 
-    public static List<Person> createShortList(){
+    public static List<Person> createShortList() {
         List<Person> people = new ArrayList<>();
 
         people.add(
@@ -261,4 +264,4 @@ class Person {
 
 }
 
-enum Gender { MALE, FEMALE }
+enum Gender {MALE, FEMALE}
