@@ -1,4 +1,4 @@
-package _part2_8_lambda._02_jdk_functional_interface.supplier;
+package _part2_8_lambda._03_jdk_functional_interface.supplier;
 
 import java.util.function.Supplier;
 
