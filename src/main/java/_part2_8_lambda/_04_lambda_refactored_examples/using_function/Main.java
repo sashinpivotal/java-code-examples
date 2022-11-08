@@ -41,7 +41,7 @@ public class Main {
         });
         displayResult("---->#2b: ", people);
 
-        // #2: TODO - write code to convert the first character to uppercase
+        // #2: TODO - write code to convert the first character of name to uppercase
 
         // #3: call methods which use Function with generic type
         Function<Person, Person> aFunction1 =
@@ -58,7 +58,7 @@ public class Main {
                 };
         displayResult("---->#3b: ", people);
 
-        // #3: TODO - write code to convert the first character to uppercase
+        // #3: TODO - write code to convert the first character of name to uppercase
 
         Function<Fruit, Fruit> aFunction3 =
                 fruit -> {
