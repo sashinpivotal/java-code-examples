@@ -1,14 +1,13 @@
-package _part2_8_lambda.lambda_basics;
+package _part2_8_lambda._01_lambda_basics;
+
+@FunctionalInterface interface Calculator {
+    int calculate(int x, int y);
+}
 
 public class Main {
 
-    public static void myMethod(Calculator m, Calculator d) {
-        int product = m.calculate(30, 10);
-        int quotient = d.calculate(200, 50);
-        System.out.println(product + " " + quotient);
-    }
-
     public static void main(String[] args) {
+
         // example of assigning lambda into a variable
         Calculator multiply = (x, y) -> x * y;
         Calculator divide = (x, y) -> x / y;
@@ -29,6 +28,12 @@ public class Main {
         // Runnable example
         Runnable runnable = () -> System.out.println("hello I am runnable");
         runnable.run();
+    }
+
+    public static void myMethod(Calculator m, Calculator d) {
+        int product = m.calculate(30, 10);
+        int quotient = d.calculate(200, 50);
+        System.out.println(product + " " + quotient);
     }
 }
 

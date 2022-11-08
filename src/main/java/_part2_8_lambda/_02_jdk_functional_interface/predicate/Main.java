@@ -1,4 +1,4 @@
-package _part2_8_lambda.functional_interface.predicate;
+package _part2_8_lambda._02_jdk_functional_interface.predicate;
 
 import java.util.Calendar;
 import java.util.Date;

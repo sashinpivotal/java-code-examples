@@ -1,4 +1,4 @@
-package _part2_8_lambda.functional_interface.function;
+package _part2_8_lambda._02_jdk_functional_interface.function;
 
 import java.util.function.BiFunction;
 import java.util.function.Function;
