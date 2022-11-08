@@ -1,6 +1,6 @@
 package _part2_8_lambda._01_anonymous_inner_class;
 
-public interface MyInterface {
+public interface MyNonFunctionalInterface {
 
     String makeUpperCase(String string);
     String makeLowerCase(String string);
@@ -9,7 +9,7 @@ public interface MyInterface {
 class Main1 {
 
     public static void main(String[] args) {
-        MyInterface myObject = new MyInterface(){
+        MyNonFunctionalInterface myObject = new MyNonFunctionalInterface(){
 
             @Override
             public String makeUpperCase(String string) {
