@@ -12,7 +12,6 @@ public class Main {
 		int sum = 0;
 		int currentIndex = 0;
 		for (Integer integer : list) {
-			System.out.println(currentIndex + " " + sum);
 			if (list.get(currentIndex) > 10) {
 				sum += list.get(currentIndex);
 			}
@@ -28,6 +27,10 @@ public class Main {
 	private static int computeSumWithValuesGreaterThan10UsingStream(List<Integer> list) {
 		return list.stream()
 				.filter(i -> i > 10)
+				// The following operation is needed to convert current
+				// stream to Intstream, over which other Integer operations
+				// can be performed like sum,Min,max etc.
+				// Omitting will result in sum() in compiler error.
 				.mapToInt(i -> i)
 				.sum();
 	}
