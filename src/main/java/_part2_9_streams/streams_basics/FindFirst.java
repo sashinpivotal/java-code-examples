@@ -16,7 +16,7 @@ public class FindFirst {
             System.out.println("First Name starting with D = " + firstNameWithD.get());
         }
 
-        names = Stream.of("Sang", "John", "David", "Mary", "Dadu");
+//        names = Stream.of("Sang", "John", "David", "Mary", "Dadu");
 
         Optional<String> anyNameWithD
                 = names.filter(i -> i.startsWith("D")).findAny();
