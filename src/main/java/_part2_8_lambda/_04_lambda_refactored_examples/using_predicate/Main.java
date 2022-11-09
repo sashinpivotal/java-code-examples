@@ -59,6 +59,7 @@ public class Main {
         List<Fruit> fruitResult = find(fruits,
                 fruit -> fruit.getName().equals("Apple"));
         displayResult("---->#3d: ", fruitResult);
+        int xyz = 20;
         fruitResult = find(fruits, fruit -> fruit.getQuantity() > 10);
         displayResult("---->#3e: ", fruitResult);
         fruitResult = find(fruits, fruit -> fruit.getName()
