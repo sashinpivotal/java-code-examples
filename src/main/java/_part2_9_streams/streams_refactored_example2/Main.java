@@ -5,6 +5,10 @@ import java.util.stream.Collectors;
 
 public class Main {
 
+    // You want to
+    // (1) find all transactions of type Grocery and
+    // (2) return a list of transaction IDs
+    // (3) sorted in decreasing order of transaction value
     public static void main(String[] args) {
 
         List<Transaction> transactions = Arrays.asList(
@@ -41,13 +45,14 @@ public class Main {
 
         List<Transaction> groceryTransactions = new ArrayList<>();
         for (Transaction t : transactions) {
-            if (t.getType().equals(TransactionType.GROCERY)) {
+            if (t.getTransactionType().equals(TransactionType.GROCERY)) {
                 groceryTransactions.add(t);
             }
         }
 
         Collections.sort(groceryTransactions, new Comparator<Transaction>() {
             public int compare(Transaction t1, Transaction t2) {
+
                 return t2.getValue().compareTo(t1.getValue());
             }
         });
@@ -69,7 +74,7 @@ public class Main {
         return transactions
                 .parallelStream()
                 .filter(transaction
-                        -> transaction.getType().equals(TransactionType.GROCERY))
+                        -> transaction.getTransactionType().equals(TransactionType.GROCERY))
                 .sorted(Comparator.comparing(Transaction::getValue).reversed())
                 .map(Transaction::getId)
                 .collect(Collectors.toList());

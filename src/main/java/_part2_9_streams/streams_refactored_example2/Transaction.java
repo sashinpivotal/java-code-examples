@@ -3,13 +3,12 @@ package _part2_9_streams.streams_refactored_example2;
 public class Transaction {
 	
 	private Integer id;
-	private TransactionType type;
+	private TransactionType transactionType;
 	private Integer value;
 	
-	public Transaction(Integer id, TransactionType type, Integer value) {
-		super();
+	public Transaction(Integer id, TransactionType transactionType, Integer value) {
 		this.id = id;
-		this.type = type;
+		this.transactionType = transactionType;
 		this.value = value;
 	}
 
@@ -25,12 +24,12 @@ public class Transaction {
 		this.id = id;
 	}
 
-	TransactionType getType() {
-		return type;
+	TransactionType getTransactionType() {
+		return transactionType;
 	}
 
-	void setType(TransactionType type) {
-		this.type = type;
+	void setTransactionType(TransactionType transactionType) {
+		this.transactionType = transactionType;
 	}
 
 }

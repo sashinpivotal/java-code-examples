@@ -56,7 +56,8 @@ public class Main {
 
 		// TODO:
 		// - Create Stream-based method, in which you filter only  
-		//   the numbers less than 9 and them compute sum of it
+		//   the numbers less than 9 and them compute max number of of it
+		List<String> numberStrings = Arrays.asList("3", "8", "14", "11");
 		
 	}
 	
