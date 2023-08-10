@@ -10,14 +10,12 @@ public class Enum_ComputerType {
 
     public static void main(String[] args) {
 
-        // TODO: Exercise #1
         // - Write an enum class called "ComputerType"
         //   with the following values
         //   - "PC", "TABLET", "PHONE"
         // - Create an array of these enum values
         // - Display the array
 
-        // TODO: Exercise #2
         // - Create a static method called
         //   "buyComputer(..)", which takes "ComputerType"
         //   enum type and quantity
@@ -34,7 +32,6 @@ public class Enum_ComputerType {
     public static void buyComputerMethodUsingEnum(ComputerType computerType, int quantity) {
         System.out.println(computerType);
     }
-
 
 }
 

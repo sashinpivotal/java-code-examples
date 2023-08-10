@@ -6,7 +6,6 @@ public class ArrayOfString_Level2 {
 
     public static void main(String[] args) {
 
-        // TODO: Exercise #1
         // - Create an array of String by using "split" method
         //   from "I love Boston.  Yes, you do love boston."
         //   using "[, ?.@]+" as regular expression
@@ -14,7 +13,6 @@ public class ArrayOfString_Level2 {
         String testString = "I love Boston.  Yes, you do love boston.";
         String[] stringArray = testString.split("[, ?.@&$]+");
 
-        // TODO: Exercise #2
         // - Create a new array of String with unique word (but
         //   case-insensitive manner) from
         //   the array of String that was created above.
@@ -42,7 +40,6 @@ public class ArrayOfString_Level2 {
         }
         System.out.println();
 
-        // TODO: Exercise #3
         // - Create an array of "char" from a String "Life is good"
         // - See if String class has a method that returns char on index location
         // - Display the array

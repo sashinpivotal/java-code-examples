@@ -6,7 +6,6 @@ public class ArrayOfString_Level1 {
 
     public static void main(String[] args) {
 
-        // TODO: Exercise #1
         // - Create a new array of String with a size of 10
         // - Assign names of your family members to the array
         // - Display the array using Arrays.toString(..) method
@@ -16,7 +15,6 @@ public class ArrayOfString_Level1 {
         familyMembers[2] = "Tom";
         System.out.println(Arrays.toString(familyMembers));
 
-        // TODO: Exercise #2
         // - Create any array of String with the
         //   following String values
         //   - "2", "40", "7", "5"
@@ -43,7 +41,6 @@ public class ArrayOfString_Level1 {
         long[] longs = new long[4];
         System.out.println(longs.getClass().getComponentType());
 
-        // TODO: Exercise #3
         // - Create an array of String called "myStringArrayA"
         //   with two words in the order: "Hello", "Boston"
         // - Create a new array of String called "myStringArrayB"

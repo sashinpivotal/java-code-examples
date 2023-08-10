@@ -5,7 +5,6 @@ import java.util.Arrays;
 public interface ArrayOfInt_Level2 {
     public static void main(String[] args) {
 
-        // TODO: Exercise #1
         // - Let's say you have any array of int
         //   initialized with 3,9,6,2,1,10,5
         // - Leverage the logic of the "findSmallestNumberIndex(..)",
