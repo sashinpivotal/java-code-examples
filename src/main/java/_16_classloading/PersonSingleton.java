@@ -14,7 +14,7 @@ public class PersonSingleton {
     }
 }
 
-class Main {
+class Main2 {
     public static void main(String[] args) {
         PersonSingleton person1 = PersonSingleton.createPerson();
         PersonSingleton person2 = PersonSingleton.createPerson();
