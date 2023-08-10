@@ -20,7 +20,7 @@ public class Calculator {
 
     public double multiplyBy2(double input) throws Exception {
         if (input < 0) {
-            throw new Exception("no negative value allowed " + input);
+            throw new IllegalArgumentException("no negative value allowed " + input);
         }
         return input * 2;
     }

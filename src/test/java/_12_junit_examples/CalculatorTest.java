@@ -43,33 +43,39 @@ public class CalculatorTest {
 
     @Test
     public void _squareRoot_should_throw_IllegalArgumentException_given_invalid_argument() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            calculator.squareRoot(-3.0);
-        });
+        assertThrows(
+                IllegalArgumentException.class, () -> {
+                    calculator.squareRoot(-3.0);
+                });
     }
 
     @Test
     public void _squareRoot_should_throw_IllegalArgumentException_with_correct_message_given_invalid_argument() {
 
-        Throwable exception = assertThrows(IllegalArgumentException.class, () -> {
-            calculator.squareRoot(-4.0);
-        });
-        Assertions.assertEquals("no negative value allowed -4.0", exception.getMessage());
+        Throwable exception = assertThrows(
+                IllegalArgumentException.class, () -> {
+                    calculator.squareRoot(-4.0);
+                });
+        Assertions.assertEquals("no negative value allowed -4.0",
+                exception.getMessage());
     }
 
     @Test
-    public void _multiplyBy2_should_throw_checked_Exception_given_invalid_argument() throws Exception {
-        assertThrows(Exception.class, () -> {
-            calculator.multiplyBy2(-3.0);
-        });
+    public void _multiplyBy2_should_throw_IllegalArgumentException_given_invalid_argument() throws Exception {
+        assertThrows(
+                IllegalArgumentException.class, () -> {
+                    calculator.multiplyBy2(-3.0);
+                });
     }
 
     @Test
-    public void _multiplyBy2_should_throw_checked_Exception_with_correct_exception_message_given_invalid_argument() throws Exception {
+    public void _multiplyBy2_should_throw_IllegalArgumentException_with_correct_exception_message_given_invalid_argument() throws Exception {
 
-        Throwable exception = assertThrows(Exception.class, () -> {
-            calculator.multiplyBy2(-5.0);
-        });
-        Assertions.assertEquals("no negative value allowed -5.0", exception.getMessage());
+        Throwable exception = assertThrows(
+                IllegalArgumentException.class, () -> {
+                    calculator.multiplyBy2(-5.0);
+                });
+        Assertions.assertEquals("no negative value allowed -5.0",
+                exception.getMessage());
     }
 }
