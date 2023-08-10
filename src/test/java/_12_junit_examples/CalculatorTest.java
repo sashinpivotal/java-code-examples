@@ -35,9 +35,11 @@ public class CalculatorTest {
         Assertions.assertEquals(-1, subtractedValue);
     }
 
-    // TODO - write "positive" test and target code for the multiply() method
+    // TODO - write "positive" test first and then target code
+    //        for the multiply() method in TDD style
 
-    // TODO - write "positive" test and target code for the divide() method
+    // TODO - write "positive" test first and target code
+    //        for the divide() method in TDD style
 
     // TODO - write "negative" test for the divide() method
     //        so that when the divisor is 0, the divide() method

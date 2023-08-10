@@ -12,6 +12,5 @@ public class PersonClient {
         person1.setAge(20);
         String personInfo1 = person1.getPersonInfo();
         System.out.println(personInfo1);
-
     }
 }
