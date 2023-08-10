@@ -35,6 +35,15 @@ public class CalculatorTest {
         Assertions.assertEquals(-1, subtractedValue);
     }
 
+    // TODO - write "positive" test and target code for the multiply() method
+
+    // TODO - write "positive" test and target code for the divide() method
+
+    // TODO - write "negative" test for the divide() method
+    //        so that when the divisor is 0, the divide() method
+    //        should throw IllegalArgumentException
+
+
     @Test
     public void squareRoot_should_return_square_value_given_valid_argument() {
         double squareRoot = calculator.squareRoot(4.0);
