@@ -2,6 +2,7 @@ package _12_junit_examples;
 
 import org.junit.jupiter.api.*;
 
+import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class CalculatorTest {
@@ -26,13 +27,13 @@ public class CalculatorTest {
     @Test
     public void add_should_add_two_numbers() {
         int addedValue = calculator.add(2, 3);
-        Assertions.assertEquals(5, addedValue);
+        assertEquals(5, addedValue);
     }
 
     @Test
     public void subtract_should_subtract_a_number_from_the_other() {
         int subtractedValue = calculator.subtract(2, 3);
-        Assertions.assertEquals(-1, subtractedValue);
+        assertEquals(-1, subtractedValue);
     }
 
     // TODO - write "positive" test first and then target code
@@ -49,7 +50,7 @@ public class CalculatorTest {
     @Test
     public void squareRoot_should_return_square_value_given_valid_argument() {
         double squareRoot = calculator.squareRoot(4.0);
-        Assertions.assertEquals(2.0, squareRoot, 0.001);
+        assertEquals(2.0, squareRoot, 0.001);
     }
 
     @Test
@@ -67,7 +68,7 @@ public class CalculatorTest {
                 IllegalArgumentException.class, () -> {
                     calculator.squareRoot(-4.0);
                 });
-        Assertions.assertEquals("no negative value allowed -4.0",
+        assertEquals("no negative value allowed -4.0",
                 exception.getMessage());
     }
 
@@ -86,7 +87,7 @@ public class CalculatorTest {
                 IllegalArgumentException.class, () -> {
                     calculator.multiplyBy2(-5.0);
                 });
-        Assertions.assertEquals("no negative value allowed -5.0",
+        assertEquals("no negative value allowed -5.0",
                 exception.getMessage());
     }
 }

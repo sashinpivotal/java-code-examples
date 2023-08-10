@@ -7,28 +7,28 @@ import org.mockito.BDDMockito;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 @ExtendWith(MockitoExtension.class)
-public class PersonTest {
+public class EmployeeTest {
 
     @Mock
     private Address address;
 
-    // This test will fail due to a logic error
+    // This test could fail due to a logic error
     // in the Address dependency
     // (In that respect, it is an integration testing
     // involving two classes not a unit test.)
-    // (Whether you want to use integration testing or
-    // unit testing or both is up to you.)
     @Test
     public void getPersonInfo_should_return_upperCased_info_not_using_mock() {
 
         // arrange
-        Address boston = new Address("boston", "usa");
-        Person sang1 = new Person("sang", boston);
+        Address address = new Address("boston", "usa");
+        Employee sang1 = new Employee("sang", address);
         String upperCasedPersonInfo = sang1.getUpperCasedPersonInfo();
 
         // assert
-        Assertions.assertEquals("SANG LIVES IN BOSTON USA", upperCasedPersonInfo);
+        assertEquals("SANG LIVES IN BOSTON USA", upperCasedPersonInfo);
 
     }
 
@@ -41,11 +41,11 @@ public class PersonTest {
         BDDMockito.given(address.getInfo()).willReturn("boston USA");
 
         // act
-        Person person = new Person("sang", address);
-        String upperCasedPersonInfo = person.getUpperCasedPersonInfo();
+        Employee employee = new Employee("sang", address);
+        String upperCasedPersonInfo = employee.getUpperCasedPersonInfo();
 
         // assert
-        Assertions.assertEquals("SANG LIVES IN BOSTON USA", upperCasedPersonInfo);
+        assertEquals("SANG LIVES IN BOSTON USA", upperCasedPersonInfo);
 
         // verify
         BDDMockito.verify(address).getInfo();
