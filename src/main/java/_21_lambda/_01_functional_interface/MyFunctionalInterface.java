@@ -24,6 +24,5 @@ class Main2 {
                 = string -> string.toUpperCase();
         System.out.println(myObject2.makeUpperCase("Boston"));
 
-
     }
 }
