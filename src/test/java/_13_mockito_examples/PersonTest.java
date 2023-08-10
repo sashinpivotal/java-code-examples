@@ -1,13 +1,13 @@
 package _13_mockito_examples;
 
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.BDDMockito;
 import org.mockito.Mock;
-import org.mockito.runners.MockitoJUnitRunner;
+import org.mockito.junit.jupiter.MockitoExtension;
 
-@RunWith(MockitoJUnitRunner.class)
+@ExtendWith(MockitoExtension.class)
 public class PersonTest {
 
     @Mock
@@ -28,7 +28,7 @@ public class PersonTest {
         String upperCasedPersonInfo = sang1.getUpperCasedPersonInfo();
 
         // assert
-        Assert.assertEquals("SANG LIVES IN BOSTON USA", upperCasedPersonInfo);
+        Assertions.assertEquals("SANG LIVES IN BOSTON USA", upperCasedPersonInfo);
 
     }
 
@@ -45,7 +45,7 @@ public class PersonTest {
         String upperCasedPersonInfo = person.getUpperCasedPersonInfo();
 
         // assert
-        Assert.assertEquals("SANG LIVES IN BOSTON USA", upperCasedPersonInfo);
+        Assertions.assertEquals("SANG LIVES IN BOSTON USA", upperCasedPersonInfo);
 
         // verify
         BDDMockito.verify(address).getInfo();

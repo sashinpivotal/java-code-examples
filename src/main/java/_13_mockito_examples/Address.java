@@ -11,6 +11,6 @@ public class Address {
     }
 
     public String getInfo() {
-        return city + " " + country + "xx";
+        return city + " " + country;
     }
 }
