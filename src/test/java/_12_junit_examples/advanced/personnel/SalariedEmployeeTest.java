@@ -30,7 +30,8 @@ public class SalariedEmployeeTest {
     @Test
     public void getEmployeeInfo_should_return_valid_info_on_SalariedEmployee() {
 
-        assertEquals("name = sang, hireDate = 2020-05-23, monthlySalary = 1000.0", employee.getEmployeeInfo());
+        assertEquals("name = sang, hireDate = 2020-05-23, monthlySalary = 1000.0",
+                employee.getEmployeeInfo());
     }
 
     // TODO-12: Write appropriate test code by reading the test method name
@@ -45,7 +46,6 @@ public class SalariedEmployeeTest {
 
     }
 
-    // TODO-14: Write appropriate test code by reading the test method name
     @Test
     public void _throw_TooMuchSalaryException_when_salary_is_set_with_more_than_million() {
         assertThrows(

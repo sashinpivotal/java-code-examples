@@ -2,6 +2,8 @@ package _12_junit_examples.simple;
 
 import _12_junit_examples.simple.Calculator;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -94,4 +96,20 @@ public class CalculatorTest {
         assertEquals("no negative value allowed -5.0",
                 exception.getMessage());
     }
+
+    @ParameterizedTest
+    @CsvSource({
+            "0, 1, 1",
+            "1, 2, 3",
+            "49, 51, 100",
+            "1, 100, 101"})
+    void addTest_with_parameters(int first, int second, int expectedResult) {
+        Calculator calculator = new Calculator();
+        int actualResult = calculator.add(first, second);
+        assertEquals(expectedResult, actualResult);
+    }
+
+    // TODO-04 - write parameterized test for
+    //           multiply() method
+
 }
