@@ -1,5 +1,6 @@
 package _22_optional;
 
+import java.util.Locale;
 import java.util.Optional;
 import java.util.stream.Stream;
 
@@ -16,31 +17,25 @@ public class SomeClass {
 
 class Main {
     public static void main(String[] args) {
-//        SomeClass aObject = new SomeClass();
-//        String string = aObject.someMethod();
-//        if (string != null) {
-//            String s = string.toUpperCase(Locale.ROOT);
-//        }
-//
-//        Optional<String> optionalS = aObject.someMethod2();
-//        if (optionalS.isPresent()) {
-//            String s = optionalS.get();
-//            s.length();
-//        }
+        SomeClass aObject = new SomeClass();
+        String string = aObject.someMethod();
 
-        Stream.of("d2", "a2", "b1", "b3", "c")
-                .map(s -> s.toUpperCase())
-                .filter(s -> {
-                    System.out.println(s);
-                    return s.startsWith("B");
-                })
-                .forEach(s -> System.out.println(s));
-        ; // no print
+        // If SomeClass has a method that could
+        // return null, the caller has to
+        // check if the returned object is null
+        // or not in order to avoid NullPointException.
+        // But developer could easily forget to
+        // do this check.
+        if (string != null) {
+            String s = string.toUpperCase(Locale.ROOT);
+        }
 
-        Stream.of("d2", "a2", "b1", "b3", "c")
-                .map(s -> s.toUpperCase())
-                .filter(s -> s.startsWith("B")); // no print
-
+        // If the method returns Optional, the caller
+        // is forced to make the check at compile time.
+        Optional<String> optionalS = aObject.someMethod2();
+        if (optionalS.isPresent()) {
+            String s = optionalS.get();
+        }
 
     }
 }
