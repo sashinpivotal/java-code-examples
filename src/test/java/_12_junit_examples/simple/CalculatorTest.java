@@ -28,7 +28,10 @@ public class CalculatorTest {
     @Test
     public void add_should_add_two_numbers() {
         int addedValue = calculator.add(2, 3);
+        // Using JUnit Assertions package
         assertEquals(5, addedValue);
+        // Using AssertJ Assertions package
+        org.assertj.core.api.Assertions.assertThat(addedValue).isEqualTo(5);
     }
 
     @Test
