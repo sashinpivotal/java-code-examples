@@ -30,15 +30,19 @@ public class Main {
         displayResult("---->#1b: ", people);
 
         // #2: call methods which use Function with specific type
-        convertPeople(people, person -> {
-            person.setName(person.getName().toUpperCase());
-            return person;
-        });
+        convertPeople(
+                people,
+                person -> {
+                    person.setName(person.getName().toUpperCase());
+                    return person;
+                });
         displayResult("---->#2a: ", people);
-        convertPeople(people, person -> {
-            person.setName(person.getName().toLowerCase());
-            return person;
-        });
+        convertPeople(
+                people,
+                person -> {
+                    person.setName(person.getName().toLowerCase());
+                    return person;
+                });
         displayResult("---->#2b: ", people);
 
         // #2: TODO - write code to convert the first
@@ -58,9 +62,6 @@ public class Main {
                     return person;
                 };
         displayResult("---->#3b: ", people);
-
-        // #3: TODO - write code to convert the first
-        //            character of name to uppercase
 
         Function<Fruit, Fruit> aFunction3 =
                 fruit -> {
