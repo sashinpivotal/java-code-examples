@@ -1,4 +1,4 @@
-package _12_junit_examples;
+package _12_junit_examples.simple;
 
 public class Calculator {
 

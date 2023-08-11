@@ -1,5 +1,6 @@
-package _12_junit_examples;
+package _12_junit_examples.simple;
 
+import _12_junit_examples.simple.Calculator;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -36,13 +37,13 @@ public class CalculatorTest {
         assertEquals(-1, subtractedValue);
     }
 
-    // TODO - write "positive" test first and then target code
+    // TODO-01 - write "positive" test first and then target code
     //        for the multiply() method in TDD style
 
-    // TODO - write "positive" test first and target code
+    // TODO-02 - write "positive" test first and target code
     //        for the divide() method in TDD style
 
-    // TODO - write "negative" test for the divide() method
+    // TODO-03 - write "negative" test for the divide() method
     //        so that when the divisor is 0, the divide() method
     //        should throw IllegalArgumentException
 
