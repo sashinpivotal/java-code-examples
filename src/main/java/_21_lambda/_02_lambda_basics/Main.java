@@ -1,39 +1,33 @@
 package _21_lambda._02_lambda_basics;
 
-@FunctionalInterface interface Calculator {
-    int calculate(int x, int y);
-}
-
 public class Main {
 
     public static void main(String[] args) {
 
         // example of assigning lambda into a variable
-        Calculator multiply = (x, y) -> x * y;
-        Calculator divide = (x, y) -> x / y;
-        Calculator add = (x, y) -> {
+        Calculator multiplier = (x, y) -> x * y;
+        Calculator divider = (x, y) -> x / y;
+        Calculator adder = (x, y) -> {
             System.out.println("something");
             return x + y;
         };
 
-        int result1 = multiply.calculate(20, 30);
-        System.out.println(result1);
-        int result2 = divide.calculate(30, 10);
-        System.out.println(result2);
+        int result1 = multiplier.calculate(20, 30);
+        System.out.println("multiply result = " + result1);
+        int result2 = divider.calculate(30, 10);
+        System.out.println("divide result = " + result2);
 
         // example of passing lambda as method arguments
         myMethod(((x, y) -> x * y), (x, y) -> x / y);
-        myMethod(multiply, divide);
+        myMethod(multiplier, divider);
 
-        // Runnable example
-        Runnable runnable = () -> System.out.println("hello I am runnable");
-        runnable.run();
     }
 
-    public static void myMethod(Calculator m, Calculator d) {
-        int product = m.calculate(30, 10);
-        int quotient = d.calculate(200, 50);
-        System.out.println(product + " " + quotient);
+    public static void myMethod(Calculator calculator1, Calculator calculator2) {
+        int result1 = calculator1.calculate(30, 10);
+        int result2 = calculator2.calculate(200, 50);
+        System.out.println("result1 = " + result1 + ", result2 = " + result2);
     }
+
 }
 
