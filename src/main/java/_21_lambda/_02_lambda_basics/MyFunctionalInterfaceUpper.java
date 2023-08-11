@@ -1,7 +1,7 @@
-package _21_lambda._01_functional_interface;
+package _21_lambda._02_lambda_basics;
 
 @FunctionalInterface
-public interface MyFunctionalInterface {
+public interface MyFunctionalInterfaceUpper {
     String makeUpperCase(String string);
 }
 
@@ -9,9 +9,8 @@ class Main2 {
     public static void main(String[] args) {
 
         // Use anonymous inner class
-        MyFunctionalInterface myObject1
-                = new MyFunctionalInterface() {
-
+        MyFunctionalInterfaceUpper myObject1
+                = new MyFunctionalInterfaceUpper() {
             @Override
             public String makeUpperCase(String string) {
                 return string.toUpperCase();
@@ -20,7 +19,7 @@ class Main2 {
         System.out.println(myObject1.makeUpperCase("Boston"));
 
         // Use Lambda
-        MyFunctionalInterface myObject2
+        MyFunctionalInterfaceUpper myObject2
                 = string -> string.toUpperCase();
         System.out.println(myObject2.makeUpperCase("Boston"));
 
