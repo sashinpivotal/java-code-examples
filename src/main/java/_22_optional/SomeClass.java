@@ -23,9 +23,10 @@ class Main {
         // If SomeClass has a method that could
         // return null, the caller has to
         // check if the returned object is null
-        // or not in order to avoid NullPointException.
+        // or not in order to avoid NullPointerException.
         // But developer could easily forget to
-        // do this check.
+        // do this check, which could result in
+        // runtime exception.
         if (string != null) {
             String s = string.toUpperCase(Locale.ROOT);
         }

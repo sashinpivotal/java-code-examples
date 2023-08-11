@@ -9,7 +9,7 @@ class Main1 {
 
     public static void main(String[] args) {
 
-        // example of assigning lambda's into variables
+        // Example of assigning lambda's into variables
         Calculator multiplier = (x, y) -> x * y;
         Calculator divider = (x, y) -> x / y;
 
@@ -23,17 +23,22 @@ class Main1 {
         //   and assign it into a variable called "adder"
         // - Use "adder" object to perform adding two numbers
 
-        // example of passing lambda's as method arguments
+        // Example of passing lambda's as method arguments
         myMethod(((x, y) -> x * y), (x, y) -> x / y);
         myMethod(multiplier, divider);
 
         // TODO-02:
-        // - Create "myMethod3" method that takes an argument which
-        //   is a lambda that adds two numbers and returns added
-        //   value
-        // - Call "myMethod3" method and display the result
+        // - Create "myMethod3" method that takes the following
+        //   3 arguments and performs the calculation with x and y
+        //   - Calculator object
+        //   - int x
+        //   - int y
+        // - Call "myMethod3" method with Calculator object
+        //   that performs addition and display the result
+        // - Call "myMethod3" method with Calculator object
+        //   that performs multiplication and display the result
 
-        // example of returning lambda
+        // Example of returning lambda
         Calculator calculator = myMethod2();
         int result3 = calculator.calculate(10, 20);
         System.out.println("result3 = " + result3);
