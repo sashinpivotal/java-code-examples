@@ -10,7 +10,9 @@ public class SalariedEmployee extends Employee {
         super(name, hireDate);
     }
 
-    public SalariedEmployee(String name, LocalDate hireDate, double monthlySalary) {
+    public SalariedEmployee(String name,
+                            LocalDate hireDate,
+                            double monthlySalary) {
         super(name, hireDate);
         this.monthlySalary = monthlySalary;
     }

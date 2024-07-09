@@ -1,4 +1,4 @@
-package _07_abstract_examples.animal;
+package _07_abstract_examples.animal_examples;
 
 class Bird extends Animal {
 

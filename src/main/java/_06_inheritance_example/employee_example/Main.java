@@ -1,10 +1,5 @@
 package _06_inheritance_example.employee_example;
 
-import _06_inheritance_example.employee_example.Department;
-import _06_inheritance_example.employee_example.Employee;
-import _06_inheritance_example.employee_example.HourlyEmployee;
-import _06_inheritance_example.employee_example.SalariedEmployee;
-
 import java.time.LocalDate;
 
 public class Main {
@@ -12,11 +7,13 @@ public class Main {
     public static void main(String[] args) {
 
         Employee[] employees = new Employee[100];
-        Department marketingDepartment = new Department(
-                "marketing", employees);
+        Department marketingDepartment
+                = new Department("marketing", employees);
 
-        Employee sang = new Employee("sang", LocalDate.of(2020, 03, 04));
-        Employee nancy = new Employee("nancy", LocalDate.of(2010, 02, 04));
+        Employee sang = new Employee("sang",
+                LocalDate.of(2020, 03, 04));
+        Employee nancy = new Employee("nancy",
+                LocalDate.of(2010, 02, 04));
 
         Employee david = new SalariedEmployee("david",
                 LocalDate.of(1999, 12, 04),

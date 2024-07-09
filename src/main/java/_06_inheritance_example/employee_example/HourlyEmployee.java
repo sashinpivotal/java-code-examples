@@ -21,7 +21,6 @@ public class HourlyEmployee extends Employee {
     }
 
     public void setNumberOfHoursWorkedPerMonth(int numberOfHoursWorkedPerMonth) {
-        // validation
         this.numberOfHoursWorkedPerMonth = numberOfHoursWorkedPerMonth;
     }
 
