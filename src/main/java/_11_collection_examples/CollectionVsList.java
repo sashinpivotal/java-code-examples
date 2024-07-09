@@ -18,7 +18,6 @@ public class CollectionVsList {
         // reasons to choose choice #2
         // - List interface provides more methods to deal with
         strings2.set(2, "kiaya");
-
         someMethod1(strings2);
     }
 
@@ -27,6 +26,5 @@ public class CollectionVsList {
     }
 
     public static void someMethod2(Collection<String> myArgument) {
-
     }
 }

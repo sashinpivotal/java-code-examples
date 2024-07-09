@@ -1,6 +1,6 @@
 package _01_classes_and_objects_examples;
 
-public class PersonClient {
+public class Main {
 
     public static void main(String[] args) {
 

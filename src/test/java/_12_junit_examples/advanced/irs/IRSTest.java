@@ -1,13 +1,11 @@
 package _12_junit_examples.advanced.irs;
 
-
 import _12_junit_examples.advanced.hr.corp.Corporation;
 import _12_junit_examples.advanced.hr.personnel.HourlyEmployee;
 import _12_junit_examples.advanced.hr.personnel.SalariedEmployee;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class IRSTest {

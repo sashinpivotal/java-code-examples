@@ -1,11 +1,11 @@
-package _07_abstract_examples.car_example.client;
+package _07_abstract_examples.car_example;
 
 import _07_abstract_examples.car_example.Boat;
 import _07_abstract_examples.car_example.Car;
 import _07_abstract_examples.car_example.DMV;
 import _07_abstract_examples.car_example.Vehicle;
 
-class CarClient {
+class Main {
 
     public static void main(String[] args) {
 
