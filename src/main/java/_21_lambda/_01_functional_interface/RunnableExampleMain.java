@@ -1,6 +1,6 @@
 package _21_lambda._01_functional_interface;
 
-public class RunnableExample {
+public class RunnableExampleMain {
     public static void main(String[] args) {
 
         // Anonymous Runnable

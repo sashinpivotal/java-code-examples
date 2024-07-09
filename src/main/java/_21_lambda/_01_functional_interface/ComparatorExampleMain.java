@@ -2,7 +2,7 @@ package _21_lambda._01_functional_interface;
 
 import java.util.*;
 
-public class ComparatorExample {
+public class ComparatorExampleMain {
 
     public static void main(String[] args) {
 

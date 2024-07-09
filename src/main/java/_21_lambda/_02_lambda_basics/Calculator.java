@@ -5,7 +5,7 @@ public interface Calculator {
     int calculate(int x, int y);
 }
 
-class Main1 {
+class Main {
 
     public static void main(String[] args) {
 

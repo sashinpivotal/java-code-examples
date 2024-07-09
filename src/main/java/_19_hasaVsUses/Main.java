@@ -1,4 +1,7 @@
-package _19_hasaVsUses.uses;
+package _19_hasaVsUses;
+
+import _19_hasaVsUses.uses.Computer;
+import _19_hasaVsUses.uses.Person;
 
 public class Main {
 

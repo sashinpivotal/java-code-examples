@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.time.LocalTime;
 
-public class ActionListenerExample {
+public class ActionListenerExampleMain {
 
     public static void main(String[] args) {
         JButton testButton1 = new JButton("Click to call Anonymous ActionListener");
