@@ -1,4 +1,4 @@
-package _06_inheritance_example.employee_example.client;
+package _06_inheritance_example.employee_example;
 
 import _06_inheritance_example.employee_example.Department;
 import _06_inheritance_example.employee_example.Employee;
@@ -7,7 +7,7 @@ import _06_inheritance_example.employee_example.SalariedEmployee;
 
 import java.time.LocalDate;
 
-public class DepartmentClient {
+public class Main {
 
     public static void main(String[] args) {
 

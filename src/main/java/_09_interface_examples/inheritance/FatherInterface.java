@@ -16,39 +16,4 @@ public interface FatherInterface {
     }
 }
 
-class Main {
-
-    public static void main(String[] args) {
-        MyImplementationOfChildInterface anInterface
-                = new MyImplementationOfChildInterface();
-        anInterface.dMethod1();
-        anInterface.dMethod2();
-        FatherInterface.myStaticMethod();
-    }
-
-}
-
-interface ChildInterface extends FatherInterface {
-    void childMethod();
-}
-
-class MyImplementationOfChildInterface
-        implements ChildInterface {
-
-    @Override
-    public void fatherMethod() {
-
-    }
-
-    @Override
-    public void childMethod() {
-
-    }
-
-    @Override
-    public void dMethod2() {
-        System.out.println("dMethod2 in the implementation class ");
-    }
-}
-
 

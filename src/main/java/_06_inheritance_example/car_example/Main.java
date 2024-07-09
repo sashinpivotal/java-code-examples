@@ -1,11 +1,11 @@
-package _06_inheritance_example.car_example.client;
+package _06_inheritance_example.car_example;
 
 import _06_inheritance_example.car_example.Boat;
 import _06_inheritance_example.car_example.Car;
 import _06_inheritance_example.car_example.DMV;
 import _06_inheritance_example.car_example.Vehicle;
 
-class CarClient {
+class Main {
 
     public static void main(String[] args) {
         Car car = new Car("ABC123");

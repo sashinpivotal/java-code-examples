@@ -16,7 +16,7 @@ class Employee {
             c.moveTo("Moon");
         } catch (IllegalArgumentException illegalArgumentException) {
             System.out.println(illegalArgumentException.getMessage());
-            throw new TrafficIsHeavyException("my business level exception message");
+            throw new TrafficIsHeavyRuntimeException("my business level exception message");
         } catch (SQLException sqlException) {
             System.out.println(sqlException.getMessage());
         } catch (Exception e) {
