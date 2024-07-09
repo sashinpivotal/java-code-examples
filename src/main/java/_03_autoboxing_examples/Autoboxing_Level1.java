@@ -11,19 +11,17 @@ public class Autoboxing_Level1 {
     //   array
 
     public static void main(String[] args) {
-        // example of auto-boxing
+        // Example of auto-boxing from int to Integer
         Integer[] myIntegerArray = {1, 2, 3, 4, 5, 6,};
 
-        // example of unboxing
+        // Example of unboxing from Integer to int
         int myInt = new Integer(4);
 
-        // example of unboxing
-        int[] anotherIntArray = new int[10]; // example of creating an array with fixed size
+        // Example of unboxing from Integer array to int array
         int[] myIntArray = new int[myIntegerArray.length];
         for (int i = 0; i < myIntegerArray.length; i++) {
-            myIntArray[i] = myIntegerArray[i]; // example of unboxing
+            myIntArray[i] = myIntegerArray[i];
         }
-
         System.out.println(Arrays.toString(myIntArray));
 
     }

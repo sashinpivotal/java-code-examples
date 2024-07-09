@@ -35,11 +35,14 @@ public class ArrayOfString_Level1 {
 
         // Print out element types of arrays
         Integer[] integers = new Integer[4];
-        System.out.println(integers.getClass().getComponentType());
+        System.out.println("Component type of Integer[] array = "
+                           + integers.getClass().getComponentType());
         double[] doubles = new double[3];
-        System.out.println(doubles.getClass().getComponentType());
+        System.out.println("Component type of doubles[] array = "
+                           + doubles.getClass().getComponentType());
         long[] longs = new long[4];
-        System.out.println(longs.getClass().getComponentType());
+        System.out.println("Component type of doubles[] array = "
+                           + longs.getClass().getComponentType());
 
         // - Create an array of String called "myStringArrayA"
         //   with two words in the order: "Hello", "Boston"
