@@ -1,7 +1,5 @@
 package _12_junit_examples.simple;
 
-import _13_mockito_examples.Address;
-
 public class Person {
 
     private String name;
