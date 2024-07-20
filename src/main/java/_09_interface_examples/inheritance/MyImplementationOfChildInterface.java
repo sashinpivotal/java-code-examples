@@ -1,7 +1,7 @@
 package _09_interface_examples.inheritance;
 
 class MyImplementationOfChildInterface
-        implements ChildInterface {
+        implements IChildInterface {
 
     @Override
     public void fatherMethod() {

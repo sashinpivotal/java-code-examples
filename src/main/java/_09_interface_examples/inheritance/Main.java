@@ -7,7 +7,7 @@ class Main {
                 = new MyImplementationOfChildInterface();
         anInterface.dMethod1();
         anInterface.dMethod2();
-        FatherInterface.myStaticMethod();
+        IFatherInterface.myStaticMethod();
     }
 
 }

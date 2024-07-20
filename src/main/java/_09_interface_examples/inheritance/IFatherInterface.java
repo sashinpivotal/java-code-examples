@@ -1,6 +1,6 @@
 package _09_interface_examples.inheritance;
 
-public interface FatherInterface {
+public interface IFatherInterface {
     void fatherMethod();
 
     default void dMethod1() {
